@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Chinthakindi Vishwa Karthikeya - Frontend Developer specializing in HTML, CSS, JavaScript, and modern web development.">
+    <meta name="keywords" content="Frontend Developer, Web Developer, HTML, CSS, JavaScript, Portfolio, Hyderabad">
+    <meta name="author" content="Chinthakindi Vishwa Karthikeya">
+    <title>Chinthakindi Vishwa Karthikeya | Frontend Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%2338bdf8%22>VK</text></svg>">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <div class="nav-brand">
+                <a href="#home" class="logo">CVK</a>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="nav-close" id="navClose">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="nav-toggle" id="navToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h3 class="hero-subtitle">Hello, I'm</h3>
+                        <h1 class="hero-title">Chinthakindi Vishwa Karthikeya</h1>
+                        <h2 class="hero-role">Frontend Developer</h2>
+                        <div class="typing-container">
+                            <span class="typing-text" id="typing-text"></span>
+                            <span class="typing-cursor">|</span>
+                        </div>
+                        <p class="hero-description">
+                            Aspiring Frontend Developer and Computer Science undergraduate passionate about building responsive, 
+                            user-friendly web applications and continuously improving problem-solving skills.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>View Projects</span>
+                            </a>
+                            <a href="#" class="btn btn-secondary" id="resumeBtn">
+                                <span>Download Resume</span>
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-image">
+                        <div class="profile-image-container">
+                            <div class="profile-image-wrapper">
+                                <img src="hero-image.jpeg" alt="Chinthakindi Vishwa Karthikeya" class="profile-image" id="profileImage">
+                                <div class="profile-glow"></div>
+                            </div>
+                            <div class="image-fallback">
+                                <div class="initials-avatar">VK</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about" class="scroll-down">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="about-content">
+                    <p class="about-text">
+                        I am a Computer Science Engineering student currently in 2nd year at Sri Indu College of Engineering and Technology. 
+                        I enjoy building websites using HTML, CSS, and JavaScript and love transforming ideas into real-world web experiences. 
+                        I am strengthening my foundation in Data Structures and Algorithms while building frontend projects. 
+                        I am enthusiastic about learning modern technologies, collaborating with others, and growing as a professional software engineer.
+                    </p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Hyderabad, Telangana, India</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.Tech Computer Science Engineering</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-university"></i>
+                            <div>
+                                <h4>College</h4>
+                                <p>Sri Indu College of Engineering and Technology</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <h4>Year</h4>
+                                <p>2nd Year (2022 - Present)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-code"></i>
+                            Frontend Skills
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span class="skill-name">HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span class="skill-name">CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <span class="skill-name">JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <span class="skill-name">Responsive Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-tools"></i>
+                            Tools & Technologies
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <span class="skill-name">Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <span class="skill-name">GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <span class="skill-name">VS Code</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <span class="skill-name">Chrome DevTools</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <span class="skill-name">Firebase (Basics)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-users"></i>
+                            Soft Skills
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-flag"></i>
+                                </div>
+                                <span class="skill-name">Leadership</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <span class="skill-name">Anchoring</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <span class="skill-name">Communication</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <span class="skill-name">Team Collaboration</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">
+                            <i class="fas fa-language"></i>
+                            Languages
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <span class="skill-name">English</span>
+                                <span class="skill-level">Fluent</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-flag"></i>
+                                </div>
+                                <span class="skill-name">Hindi</span>
+                                <span class="skill-level">Intermediate</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-flag"></i>
+                                </div>
+                                <span class="skill-name">Telugu</span>
+                                <span class="skill-level">Native</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Hands-on experience building real-world web applications</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-number">01</div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">codemania-2025-codepro Project</h3>
+                            <p class="project-description">
+                                Developed a comprehensive website showcasing coding resources and community initiatives 
+                                with responsive layouts and intuitive navigation.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/vishwakarthikeya/codemania-2025-codepro" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-number">02</div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>Firebase</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Cyber Security Events Website</h3>
+                            <p class="project-description">
+                                Built an event listing and registration website with authentication and responsive UI.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/vishwakarthikeya/cyberSecurityEventsWebsite" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-number">03</div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Code Nirvahana Website</h3>
+                            <p class="project-description">
+                                Created official website for Code Nirvahana platform with clean UI and structured layout.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/codenirvahanabycrezonics-bot/CodeNirvahana-Web-site" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-number">04</div>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Cyber Security Club Website</h3>
+                            <p class="project-description">
+                                Designed and developed club website showcasing activities and events.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/vishwakarthikeya/Cyber-Club-Project" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="education-container">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <div class="education-period">2024 – Present</div>
+                            <h3 class="education-degree">B.Tech in Computer Science and Engineering</h3>
+                            <p class="education-institution">Sri Indu College of Engineering and Technology</p>
+                            <p class="education-status">Currently in 2nd Year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<br>
+             <div class="education-container">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <div class="education-period">2022-2024</div>
+                            <h3 class="education-degree">Intermediate-SSC</h3>
+                            <p class="education-institution">Narayan Junior College</p>
+                            <p class="education-status">Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <br>
+             <div class="education-container">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <div class="education-period">2020-2021</div>
+                            <h3 class="education-degree">10<sup>th</sup>Class-SSC</h3>
+                            <p class="education-institution">MNR School Of Excellence</p>
+                            <p class="education-status">Completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Achievements & Certifications</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Recognitions and accomplishments in tech and academia</p>
+                </div>
+                
+                <div class="achievements-grid">
+                    <!-- Achievement cards will be dynamically generated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Feel free to reach out for collaborations or just a friendly hello</p>
+                </div>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:chinthakindivishwakarthikeya@gmail.com">chinthakindivishwakarthikeya@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <a href="tel:+918106586390">+91 8106586390</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Hyderabad, Telangana, India</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/vishwakarthikeya" target="_blank">linkedin.com/in/vishwakarthikeya</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <a href="https://github.com/vishwakarthikeya" target="_blank">github.com/vishwakarthikeya</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder="Your Name">
+                                <label for="name">Name</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder="Your Email">
+                                <label for="email">Email</label>
+                            </div>
+                            
+                            <div class="form-group">
+                                <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                            
+                            <div id="formMessage" class="form-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home" class="logo">CVK</a>
+                    <p>Frontend Developer & Web Enthusiast</p>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/vishwakarthikeya" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/vishwakarthikeya" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p>&copy; <span id="currentYear"></span> Chinthakindi Vishwa Karthikeya. All rights reserved.</p>
+                    <p>Built with pure HTML, CSS & JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
